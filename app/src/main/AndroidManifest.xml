@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.krishna.online_shopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/onlineshop"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetSubCat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetProduct"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Buy" />
+        <activity android:name=".ProductDetails" />
+        <activity android:name=".Login" />
+        <activity android:name=".Registration" />
+        <activity android:name=".ThankYou"></activity>
+        <activity android:name=".Delivery_Address" />
+        <activity android:name=".Show_delivery_address"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name=".Edit_delivery_address"></activity>
+        <activity android:name=".List_View_Show" />
+    </application>
+
+</manifest>
